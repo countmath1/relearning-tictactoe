@@ -1,0 +1,9 @@
+# Pinned from `pip list` on login.cl.upenn.edu (2026-04-09), Python 3.13 / conda base.
+torch==2.11.0
+transformers==5.5.3
+peft==0.18.1
+trl==1.0.0
+accelerate==1.13.0
+bitsandbytes==0.49.2
+matplotlib==3.10.8
+pytest==9.0.3
