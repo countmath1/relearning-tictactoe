@@ -5,6 +5,7 @@ from types import ModuleType
 
 _GAMES = {
     "checkers": "game.checkers",
+    "othello": "game.othello",
     "tictactoe": "game.tictactoe",
 }
 
