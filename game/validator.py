@@ -8,6 +8,8 @@ def validate(move_str: str, state, player: int, game: str = "checkers") -> bool:
         return False
     if game == "checkers":
         from game.checkers import get_legal_moves
+    elif game == "othello":
+        from game.othello import get_legal_moves
     elif game == "tictactoe":
         from game.tictactoe import get_legal_moves
     else:
