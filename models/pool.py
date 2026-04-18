@@ -86,6 +86,8 @@ def _print_cuda_mem(prefix: str, device: torch.device) -> None:
 def _player_color(player: int, game: str = "checkers") -> str:
     if game == "checkers":
         return "black" if player == 1 else "red"
+    if game == "othello":
+        return "black" if player == 1 else "white"
     if game == "tictactoe":
         return "X" if player == 1 else "O"
     return "player 1" if player == 1 else "player 2"
@@ -101,6 +103,10 @@ def _build_prompt(
         from game.checkers import board_to_ascii
         game_name = "checkers"
         example = "example: e3-f4"
+    elif game == "othello":
+        from game.othello import board_to_ascii
+        game_name = "othello"
+        example = "example: d3"
     elif game == "tictactoe":
         from game.tictactoe import board_to_ascii
         game_name = "tic-tac-toe"
